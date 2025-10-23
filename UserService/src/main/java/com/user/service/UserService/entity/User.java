@@ -1,5 +1,6 @@
 package com.user.service.UserService.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Column;
@@ -38,7 +39,7 @@ public class User {
 	private String about;
 	
 	@Transient
-	private List<Rating> ratings;
+	private List<Rating> ratings = new ArrayList<>();
 	
 	
 }
